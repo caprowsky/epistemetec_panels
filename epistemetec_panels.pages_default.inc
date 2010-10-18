@@ -199,7 +199,17 @@ font-size: 8px;
       ),
     ),
   );
-  $display->panel_settings = array();
+  $display->panel_settings = array(
+    'style_settings' => array(
+      'default' => NULL,
+      'center' => NULL,
+      'left' => NULL,
+      'right_top' => NULL,
+      'right_bottom' => NULL,
+      'left_left' => NULL,
+      'right_right' => NULL,
+    ),
+  );
   $display->cache = array();
   $display->title = 'Home';
   $display->content = array();
@@ -215,12 +225,14 @@ font-size: 8px;
     $pane->configuration = array(
       'admin_title' => '',
       'title' => '',
-      'body' => '<img src="/sites/default/files/epistemetec-right.png" alt="Logo Epistemetec" title="Epistemetec" class="imagehome">',
+      'body' => '<img src="/profiles/epistemetec/themes/fusion/epistemetec_theme/img/epistemetec-right.png" alt="Logo Epistemetec" title="Epistemetec" class="imagehome">',
       'format' => '2',
       'substitute' => TRUE,
     );
     $pane->cache = array();
-    $pane->style = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
     $pane->css = array();
     $pane->extras = array();
     $pane->position = 0;
@@ -237,12 +249,14 @@ font-size: 8px;
     $pane->configuration = array(
       'admin_title' => '',
       'title' => '',
-      'body' => '<img src="/sites/default/files/epistemetec-left.png" alt="Logo Epistemetec" title="Epistemetec" class="imagehome">',
+      'body' => '<img src="/profiles/epistemetec/themes/fusion/epistemetec_theme/img/epistemetec-left.png" alt="Logo Epistemetec" title="Epistemetec" class="imagehome">',
       'format' => '2',
       'substitute' => TRUE,
     );
     $pane->cache = array();
-    $pane->style = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
     $pane->css = array();
     $pane->extras = array();
     $pane->position = 0;
@@ -261,7 +275,9 @@ font-size: 8px;
       'override_title_text' => '',
     );
     $pane->cache = array();
-    $pane->style = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
     $pane->css = array(
       'css_id' => 'form_epistemetec',
       'css_class' => '',
@@ -289,7 +305,9 @@ font-size: 8px;
       'substitute' => TRUE,
     );
     $pane->cache = array();
-    $pane->style = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
     $pane->css = array(
       'css_id' => 'text-home',
       'css_class' => 'text-home',
